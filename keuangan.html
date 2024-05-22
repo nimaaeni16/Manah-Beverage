@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catat Keuangan - Manah Beverage (Mave)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Manah Beverage (Mave)</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="keuangan.html">Catat Keuangan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="form">
+            <h2>Catat Pemasukan/Pengeluaran</h2>
+            <form id="keuangan-form">
+                <label for="keterangan">Keterangan:</label>
+                <input type="text" id="keterangan" name="keterangan" required>
+                <label for="jumlah">Jumlah (Rp):</label>
+                <input type="number" id="jumlah" name="jumlah" required>
+                <label for="jenis">Jenis:</label>
+                <select id="jenis" name="jenis">
+                    <option value="pemasukan">Pemasukan</option>
+                    <option value="pengeluaran">Pengeluaran</option>
+                </select>
+                <button type="submit">Catat</button>
+            </form>
+        </section>
+        <section id="daftar-keuangan">
+            <h2>Daftar Pemasukan/Pengeluaran</h2>
+            <ul id="list-keuangan">
+                <!-- List pemasukan/pengeluaran akan ditampilkan di sini -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Manah Beverage (Mave). All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
